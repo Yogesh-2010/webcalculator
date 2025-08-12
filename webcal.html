@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB CALCULATOR</title>
+    <link rel="stylesheet" href="webcal.css">
+</head>
+<body>
+    <input type="text" id="res" readonly>
+    <table>
+        <tr>
+            <td><button onclick="append(7)"><i><b>7</b></i></button></td>
+            <td><button onclick="append(8)"><i><b>8</b></i></button></td>
+            <td><button onclick="append(9)"><i><b>9</b></i></button></td>
+            <td><button onclick="operate('+')"><b>+</b></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(4)"><i><b>4</b></i></button></td>
+            <td><button onclick="append(5)"><i><b>5</b></i></button></td>
+            <td><button onclick="append(6)"><i><b>6</b></i></button></td>
+            <td><button onclick="operate('-')"><b>-</b></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(1)"><i><b>1</b></i></button></td>
+            <td><button onclick="append(2)"><i><b>2</b></i></button></td>
+            <td><button onclick="append(3)"><i><b>3</b></i></button></td>
+            <td><button onclick="operate('*')"><b>*</b></button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(0)"><i><b>0</b></i></button></td>
+            <td><button onclick="clearresult()"><i><b>c</b></i></button></td>
+            <td><button onclick="calculate()"><b>=</b></button></td>
+            <td><button onclick="operate('/')"><b>/</b></button></td>
+        </tr>
+    </table>
+</body>
+<script src="webcal.js"></script>
+</html>
